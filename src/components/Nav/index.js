@@ -1,19 +1,37 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav({ currentPage, handlePageChange }) {
+function Nav(props) {
+  const {
+    contactSelected,
+    setContactSelected
+  } = props;
+
+
   return (
-    <header className="container">
-      <div className="row">
-        <h1 className="col-12 text-center">
-          <a>Michael Bair</a>
-        </h1>
-      </div>
+    <header className="flex-row px-1">
+      <h2>
+        <a data-testid="link" href="/">
+          <span role="img" aria-label="person">👨‍💻</span> Michael Bair
+        </a>
+      </h2>
       <nav>
-        <ul className="row align-center nav-list">
-          <li className="col-12 col-md-3 col-lg-3 nav-item">About Me</li>
-          <li className="col-12 col-md-3 col-lg-3 nav-item">Portfolio</li>
-          <li className="col-12 col-md-3 col-lg-3 nav-item">Resume</li>
-          <li className="col-12 col-md-3 col-lg-3 nav-item">Contact Me</li>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+              About me
+            </a>
+          </li>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(true)}>Portfolio</a>
+          </li>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          <a data-testid="resume" href="#resume" onClick={() => setContactSelected(true)}>Resume</a>
+          </li>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          <a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
+          </li>
+         
         </ul>
       </nav>
     </header>
