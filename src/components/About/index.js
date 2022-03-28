@@ -1,4 +1,5 @@
 import React from "react";
+import profilePic from "../../assets/img/me.jpeg";
 
 function About() {
     return (
@@ -6,6 +7,7 @@ function About() {
         <section className="container">
             <div className="row">
                 <h1 className="col-12">About Me</h1>
+                <img src={profilePic} className="col-12 col-md-6 col-lg-6" />
                 <div className="col-12 col-md-6 col-lg-6">
                     <ul className="col-12 col-md-6 col-lg-6" >
                         <li>
