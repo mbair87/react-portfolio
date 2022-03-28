@@ -6,12 +6,12 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
+     
           <span role="img" aria-label="person">
             👨‍💻
           </span>{" "}
           Michael Bair
-        </a>
+        
       </h2>
       <nav>
         <ul className="flex-row">
