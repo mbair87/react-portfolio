@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useState } from 'react';
 import Nav from './components/Nav';
@@ -6,27 +6,33 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentLink, setCurrentLink] = useState("About");
 
+  function RenderPage(){
+    if(currentLink === "About"){
+      return <About />;
+    }
+    else if(currentLink === "Portfolio"){
+      return <Portfolio />;
+    }
+    else if(currentLink === "Resume"){
+      return <Resume />;
+    }
+    else {
+      return <ContactForm />;
+    }
+  }
   return (
    <div>
-    <Nav
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+    <Nav currentLink={currentLink} setCurrentLink={setCurrentLink}/>
       <main>
         <div>
-        {!contactSelected ? (
-            <> 
-              <Portfolio></Portfolio>
-              <About></About>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
+        {RenderPage()} 
         </div>
+        <Footer />
       </main>
      </div>
   );

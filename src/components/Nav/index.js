@@ -1,37 +1,40 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from "react";
 
 function Nav(props) {
-  const {
-    contactSelected,
-    setContactSelected
-  } = props;
-
+  const { currentLink, setCurrentLink } = props;
 
   return (
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="person">👨‍💻</span> Michael Bair
+          <span role="img" aria-label="person">
+            👨‍💻
+          </span>{" "}
+          Michael Bair
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+             <span onClick={() => setCurrentLink("About")}>
               About me
-            </a>
+            </span>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(true)}>Portfolio</a>
+          <li className="mx-2">
+              <span onClick={() => setCurrentLink("Portfolio")}>
+              Portfolio
+            </span>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-          <a data-testid="resume" href="#resume" onClick={() => setContactSelected(true)}>Resume</a>
+          <li className="mx-2">
+             <span onClick={() => setCurrentLink("Resume")}>
+              Resume
+            </span>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-          <a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
+          <li className="mx-2">
+             <span onClick={() => setCurrentLink("Contact")}>
+              Contact
+            </span>
           </li>
-         
         </ul>
       </nav>
     </header>
