@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.c03f1926.css",
+    "main.js": "/react-portfolio/static/js/main.8ae71298.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/screenshot.png": "/react-portfolio/static/media/screenshot.dfbef785443403b2a007.png",
+    "static/media/workout-tracker-pro.png": "/react-portfolio/static/media/workout-tracker-pro.245a76fc6d5570277cc9.png",
+    "static/media/weather-tracker.png": "/react-portfolio/static/media/weather-tracker.5cf2fdbde809abd16a3f.png",
+    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.f9e085210fc7460eadb0.png",
+    "static/media/me.jpeg": "/react-portfolio/static/media/me.86fdb02447052256779f.jpeg",
+    "static/media/monster-code-quiz.png": "/react-portfolio/static/media/monster-code-quiz.eb34b44e6c1297cdf75f.png",
+    "static/media/password-generator.png": "/react-portfolio/static/media/password-generator.e794f9784ce57df3132e.png",
+    "static/media/coding-quiz.png": "/react-portfolio/static/media/coding-quiz.991786e35f262a1ee352.png",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.6a7ccb6b4c18500153ca.pdf",
+    "index.html": "/react-portfolio/index.html",
+    "main.c03f1926.css.map": "/react-portfolio/static/css/main.c03f1926.css.map",
+    "main.8ae71298.js.map": "/react-portfolio/static/js/main.8ae71298.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c03f1926.css",
+    "static/js/main.8ae71298.js"
+  ]
+}
