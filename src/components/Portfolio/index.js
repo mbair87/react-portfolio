@@ -6,6 +6,12 @@ function Portfolio() {
     const projects =
         [
             {
+                title: 'Chorezy',
+                name: 'chorezy',
+                link: 'https://chorezy2.herokuapp.com/',
+                repo: 'https://github.com/mbair87/Chorezy/'
+            },
+            {
                 title: 'Workout Tracker Pro',
                 name: 'workout-tracker-pro',
                 link: 'https://workout-tracker-pro.herokuapp.com/',
@@ -35,14 +41,9 @@ function Portfolio() {
                 name: 'work-day-scheduler',
                 link: 'https://mbair87.github.io/work-day-scheduler/',
                 repo: 'https://github.com/mbair87/work-day-scheduler'
-            },
-
-            {
-                title: 'Password Generator',
-                name: 'password-generator',
-                link: 'https://mbair87.github.io/js-password-challenge/',
-                repo: 'https://github.com/mbair87/js-password-challenge'
             }
+
+         
         ]
 
     return (
